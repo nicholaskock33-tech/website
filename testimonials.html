@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Success Stories | Electron Software Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: { 50: '#f0f9ff', 500: '#0ea5e9', 600: '#0284c7', 900: '#0c4a6e' },
+                        dark: { 900: '#0f172a', 800: '#1e293b' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    </style>
+</head>
+<body class="bg-dark-900 text-slate-300 font-sans antialiased">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 bg-dark-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-white tracking-tighter">
+                        <i class="fa-solid fa-code text-brand-500 mr-2"></i>ELECTRON<span class="text-brand-500">SOLUTIONS</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="services.html" class="hover:text-brand-500 transition-colors px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                        <a href="index.html" class="hover:text-brand-500 transition-colors px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="testimonials.html" class="text-brand-500 px-3 py-2 rounded-md text-sm font-medium">Success Stories</a>
+                        <a href="index.html#contact" class="bg-brand-600 hover:bg-brand-500 text-white px-5 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-brand-500/20">Start a Project</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" onclick="toggleMenu()" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden bg-dark-800" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-slate-700">Services</a>
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-slate-700">Home</a>
+                <a href="testimonials.html" class="block px-3 py-2 rounded-md text-base font-medium text-brand-500 font-bold">Success Stories</a>
+                <a href="index.html#contact" class="block px-3 py-2 rounded-md text-base font-medium text-brand-500 font-bold">Start a Project</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-24 bg-dark-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white tracking-tight mb-6">
+                Client <span class="text-brand-500">Success Stories</span>
+            </h1>
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-400">
+                Real results from businesses that chose to automate, scale, and grow.
+            </p>
+        </div>
+    </section>
+
+    <!-- VALUE PROPOSITIONS -->
+    <section class="py-12 bg-dark-800 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-dark-900 p-6 rounded-xl border-l-4 border-brand-500 shadow-lg">
+                    <p class="text-lg text-slate-300 italic">"Think of it this way: you are not buying simple automations, you are investing in a system designed to bring in more revenue."</p>
+                </div>
+                <div class="bg-dark-900 p-6 rounded-xl border-l-4 border-purple-500 shadow-lg">
+                    <p class="text-lg text-slate-300 italic">"You are not buying software. You are investing in the performance and results that come from using it."</p>
+                </div>
+                <div class="bg-dark-900 p-6 rounded-xl border-l-4 border-brand-500 shadow-lg">
+                    <p class="text-lg text-slate-300 italic">"Automation is not about replacing people. It is about removing repetitive work so businesses can focus on growth."</p>
+                </div>
+                <div class="bg-dark-900 p-6 rounded-xl border-l-4 border-purple-500 shadow-lg">
+                    <p class="text-lg text-slate-300 italic">"The goal is simple: more leads, faster responses, and better customer experiences."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS GRID -->
+    <section class="py-24 bg-dark-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">What Our Clients Say</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">We don't just deliver code; we deliver business outcomes.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-dark-800 p-8 rounded-2xl border border-slate-700 hover:border-brand-500/30 transition-colors flex flex-col h-full">
+                    <div class="flex text-brand-500 mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-slate-300 mb-6 flex-grow">"Before working with Electron Software Solutions, we were manually entering lead data into spreadsheets. It was a mess. Now, our new website captures every visitor's name and phone number automatically. It goes straight to our sales team. We've seen a <strong>40% increase in qualified leads</strong> in just two months."</p>
+                    <div class="flex items-center mt-auto">
+                        <div class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center text-white font-bold">JD</div>
+                        <div class="ml-4">
+                            <div class="text-white font-bold">James D.</div>
+                            <div class="text-slate-500 text-sm">CEO, Real Estate Firm</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-dark-800 p-8 rounded-2xl border border-slate-700 hover:border-brand-500/30 transition-colors flex flex-col h-full">
+                    <div class="flex text-brand-500 mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-slate-300 mb-6 flex-grow">"We were drowning in admin work. Electron Software Solutions built an automation system that handles our entire client onboarding process. New customers get their contracts, invoices, and welcome emails instantly without us lifting a finger. <strong>It saved us about 20 hours a week</strong>. It feels like we hired a new employee without the salary."</p>
+                    <div class="flex items-center mt-auto">
+                        <div class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center text-white font-bold">SL</div>
+                        <div class="ml-4">
+                            <div class="text-white font-bold">Sarah L.</div>
+                            <div class="text-slate-500 text-sm">Director, Marketing Agency</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-dark-800 p-8 rounded-2xl border border-slate-700 hover:border-brand-500/30 transition-colors flex flex-col h-full">
+                    <div class="flex text-brand-500 mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-slate-300 mb-6 flex-grow">"Our customers were complaining about slow response times. The WhatsApp chatbot Electron Software Solutions built for us changed everything. It answers FAQs instantly, 24/7. Our customers love the speed, and our support team can finally focus on complex issues instead of repetitive questions."</p>
+                    <div class="flex items-center mt-auto">
+                        <div class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center text-white font-bold">MR</div>
+                        <div class="ml-4">
+                            <div class="text-white font-bold">Michael R.</div>
+                            <div class="text-slate-500 text-sm">Founder, E-commerce Brand</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="py-20 bg-dark-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Ready to see these results for your business?</h2>
+            <p class="text-slate-400 mb-10 text-lg">Don't let manual processes hold you back. Let us build the system that drives your growth.</p>
+            <a href="index.html#contact" class="inline-block bg-brand-600 hover:bg-brand-500 text-white font-bold py-4 px-10 rounded-lg transition-all shadow-lg shadow-brand-500/25">Book Your Consultation</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark-900 border-t border-slate-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="index.html" class="text-2xl font-bold text-white tracking-tighter mb-4 block">
+                        <i class="fa-solid fa-code text-brand-500 mr-2"></i>ELECTRON<span class="text-brand-500">SOLUTIONS</span>
+                    </a>
+                    <p class="text-slate-400 max-w-sm">Building the future of digital business. We are a full-service software development agency based in Tech City.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-slate-400 text-sm">
+                        <li><a href="services.html" class="hover:text-brand-500 transition-colors">All Services</a></li>
+                        <li><a href="services.html" class="hover:text-brand-500 transition-colors">Web Development</a></li>
+                        <li><a href="services.html" class="hover:text-brand-500 transition-colors">Mobile Apps</a></li>
+                        <li><a href="services.html" class="hover:text-brand-500 transition-colors">AI & Automation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-github text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+                <p>&copy; 2023 Electron Software Solutions. All rights reserved.</p>
+                <div class="space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) { menu.classList.remove('hidden'); } else { menu.classList.add('hidden'); }
+        }
+    </script>
+</body>
+</html>
