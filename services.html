@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Electron Software Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: { 50: '#f0f9ff', 500: '#0ea5e9', 600: '#0284c7', 900: '#0c4a6e' },
+                        dark: { 900: '#0f172a', 800: '#1e293b' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    </style>
+</head>
+<body class="bg-dark-900 text-slate-300 font-sans antialiased">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 bg-dark-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-white tracking-tighter">
+                        <i class="fa-solid fa-code text-brand-500 mr-2"></i>ELECTRON<span class="text-brand-500">SOLUTIONS</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="services.html" class="text-brand-500 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                        <a href="index.html" class="hover:text-brand-500 transition-colors px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="testimonials.html" class="hover:text-brand-500 transition-colors px-3 py-2 rounded-md text-sm font-medium">Success Stories</a>
+                        <a href="index.html#contact" class="bg-brand-600 hover:bg-brand-500 text-white px-5 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-brand-500/20">Start a Project</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" onclick="toggleMenu()" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden bg-dark-800" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium text-brand-500 font-bold">Services</a>
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-slate-700">Home</a>
+                <a href="testimonials.html" class="block px-3 py-2 rounded-md text-base font-medium hover:text-white hover:bg-slate-700">Success Stories</a>
+                <a href="index.html#contact" class="block px-3 py-2 rounded-md text-base font-medium text-brand-500 font-bold">Start a Project</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-24 bg-dark-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white tracking-tight mb-6">
+                Helping Your Business <br class="hidden md:block" />
+                <span class="text-brand-500">Reach Its Full Potential</span>
+            </h1>
+            <p class="mt-4 max-w-3xl mx-auto text-xl text-slate-400">
+                We provide advanced automation and AI solutions designed to save time, capture more leads, and grow your business. From chatbots to lead-generation websites, we build systems that deliver measurable results.
+            </p>
+        </div>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <section class="py-24 bg-dark-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-dark-900 p-8 rounded-2xl border border-slate-700 hover:border-brand-500/50 transition-colors">
+                    <div class="w-14 h-14 bg-slate-800 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa-brands fa-whatsapp text-3xl text-green-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">AI Chatbots for WhatsApp</h3>
+                    <ul class="space-y-3 text-slate-400 mb-6">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-500 mt-1 mr-3"></i> Answer customer questions instantly, 24/7.</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-500 mt-1 mr-3"></i> Guide clients through onboarding or purchases automatically.</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-500 mt-1 mr-3"></i> Capture lead information (name, email, phone) directly into your database.</li>
+                    </ul>
+                    <div class="pt-4 border-t border-slate-800">
+                        <p class="text-brand-500 font-semibold"><i class="fa-solid fa-star mr-2"></i>Benefit: Faster response times, higher customer satisfaction, and more sales opportunities.</p>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-dark-900 p-8 rounded-2xl border border-slate-700 hover:border-brand-500/50 transition-colors">
+                    <div class="w-14 h-14 bg-slate-800 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-robot text-3xl text-brand-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Business Automations</h3>
+                    <ul class="space-y-3 text-slate-400 mb-6">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-500 mt-1 mr-3"></i> Automate repetitive tasks like follow-ups, reminders, and notifications.</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-500 mt-1 mr-3"></i> Streamline client onboarding so new customers are handled automatically.</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-500 mt-1 mr-3"></i> Connect all systems so data flows seamlessly.</li>
+                    </ul>
+                    <div class="pt-4 border-t border-slate-800">
+                        <p class="text-brand-500 font-semibold"><i class="fa-solid fa-star mr-2"></i>Benefit: Save time, reduce human error, and focus your team on growth tasks.</p>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-dark-900 p-8 rounded-2xl border border-slate-700 hover:border-brand-500/50 transition-colors">
+                    <div class="w-14 h-14 bg-slate-800 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-magnet text-3xl text-purple-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Lead-Generation Websites</h3>
+                    <ul class="space-y-3 text-slate-400 mb-6">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-500 mt-1 mr-3"></i> Websites designed to collect visitor information automatically.</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-500 mt-1 mr-3"></i> Capture names, emails, and phone numbers, stored directly in your database or CRM.</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-500 mt-1 mr-3"></i> Integrated with marketing systems for easy follow-up.</li>
+                    </ul>
+                    <div class="pt-4 border-t border-slate-800">
+                        <p class="text-brand-500 font-semibold"><i class="fa-solid fa-star mr-2"></i>Benefit: Turn website visitors into leads efficiently and grow your customer base.</p>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-dark-900 p-8 rounded-2xl border border-slate-700 hover:border-brand-500/50 transition-colors">
+                    <div class="w-14 h-14 bg-slate-800 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-users-gear text-3xl text-brand-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Client Onboarding Automation</h3>
+                    <ul class="space-y-3 text-slate-400 mb-6">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-500 mt-1 mr-3"></i> Simplify the process of setting up new clients.</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-500 mt-1 mr-3"></i> Automatically send forms, welcome emails, and instructions.</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand-500 mt-1 mr-3"></i> Reduce manual work and improve the client experience.</li>
+                    </ul>
+                    <div class="pt-4 border-t border-slate-800">
+                        <p class="text-brand-500 font-semibold"><i class="fa-solid fa-star mr-2"></i>Benefit: Faster onboarding, happier clients, and a more professional business operation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="py-24 bg-dark-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Why Choose Us</h2>
+                <p class="text-slate-400">We build systems that work for you, so you can focus on what matters.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-brand-900/50 p-3 rounded-lg"><i class="fa-solid fa-chart-line text-brand-500 text-xl"></i></div>
+                    <div class="ml-4">
+                        <h4 class="text-lg font-bold text-white">Capture More Leads</h4>
+                        <p class="text-slate-400 mt-2">Grow your customer base without needing to hire extra staff.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-brand-900/50 p-3 rounded-lg"><i class="fa-solid fa-bolt text-brand-500 text-xl"></i></div>
+                    <div class="ml-4">
+                        <h4 class="text-lg font-bold text-white">Instant Responses</h4>
+                        <p class="text-slate-400 mt-2">Respond to customers instantly with AI-powered tools, 24/7.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-brand-900/50 p-3 rounded-lg"><i class="fa-solid fa-clock text-brand-500 text-xl"></i></div>
+                    <div class="ml-4">
+                        <h4 class="text-lg font-bold text-white">Save Hours of Work</h4>
+                        <p class="text-slate-400 mt-2">Eliminate repetitive manual tasks with smart automations.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-brand-900/50 p-3 rounded-lg"><i class="fa-solid fa-database text-brand-500 text-xl"></i></div>
+                    <div class="ml-4">
+                        <h4 class="text-lg font-bold text-white">Stay Organized</h4>
+                        <p class="text-slate-400 mt-2">Keep all client information organized and accessible in one place.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-brand-900/50 p-3 rounded-lg"><i class="fa-solid fa-rocket text-brand-500 text-xl"></i></div>
+                    <div class="ml-4">
+                        <h4 class="text-lg font-bold text-white">Focus on Growth</h4>
+                        <p class="text-slate-400 mt-2">Let your system handle repetitive tasks while you scale the business.</p>
+                    </div>
+                </div>
+                <!-- NEW ITEM: Video Calls -->
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-brand-900/50 p-3 rounded-lg"><i class="fa-solid fa-video text-brand-500 text-xl"></i></div>
+                    <div class="ml-4">
+                        <h4 class="text-lg font-bold text-white">One-on-One Video Calls</h4>
+                        <p class="text-slate-400 mt-2">We conduct direct video calls with clients to ensure clear communication and personalized support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="py-20 bg-dark-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Ready to grow your business with automation and AI?</h2>
+            <p class="text-slate-400 mb-10 text-lg">Contact us today and see how we can help you reach your full potential.</p>
+            <a href="index.html#contact" class="inline-block bg-brand-600 hover:bg-brand-500 text-white font-bold py-4 px-10 rounded-lg transition-all shadow-lg shadow-brand-500/25">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark-900 border-t border-slate-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="index.html" class="text-2xl font-bold text-white tracking-tighter mb-4 block">
+                        <i class="fa-solid fa-code text-brand-500 mr-2"></i>ELECTRON<span class="text-brand-500">SOLUTIONS</span>
+                    </a>
+                    <p class="text-slate-400 max-w-sm">Building the future of digital business. We are a full-service software development agency based in Tech City.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-slate-400 text-sm">
+                        <li><a href="services.html" class="hover:text-brand-500 transition-colors">All Services</a></li>
+                        <li><a href="services.html" class="hover:text-brand-500 transition-colors">Web Development</a></li>
+                        <li><a href="services.html" class="hover:text-brand-500 transition-colors">Mobile Apps</a></li>
+                        <li><a href="services.html" class="hover:text-brand-500 transition-colors">AI & Automation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-github text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+                <p>&copy; 2023 Electron Software Solutions. All rights reserved.</p>
+                <div class="space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) { menu.classList.remove('hidden'); } else { menu.classList.add('hidden'); }
+        }
+    </script>
+</body>
+</html>
