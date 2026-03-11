@@ -1,38 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-    <script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
-  o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
-  o.onload=function(){window.trackingFunctions.onLoad({appId:"69af46062126520011baf66f"})},
-  document.head.appendChild(o)}initApollo();</script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electron Software Solutions | Custom Software Solutions</title>
-    <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
                     colors: {
-                        brand: {
-                            50: '#f0f9ff',
-                            500: '#0ea5e9',
-                            600: '#0284c7',
-                            900: '#0c4a6e',
-                        },
-                        dark: {
-                            900: '#0f172a',
-                            800: '#1e293b',
-                        }
+                        brand: { 50: '#f0f9ff', 500: '#0ea5e9', 600: '#0284c7', 900: '#0c4a6e' },
+                        dark: { 900: '#0f172a', 800: '#1e293b' }
                     }
                 }
             }
@@ -51,9 +33,10 @@
     <nav class="fixed w-full z-50 bg-dark-900/90 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <div class="flex items-center">
-                    <a href="index.html" class="text-2xl font-bold text-white tracking-tighter">
-                        <i class="fa-solid fa-code text-brand-500 mr-2"></i>ELECTRON<span class="text-brand-500">SOLUTIONS</span>
+                <div class="flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="https://raw.githubusercontent.com/nicholaskock33-tech/website/main/mylogo.jpg" alt="Electron Software Solutions Logo" class="h-10 w-10 rounded-full object-cover border-2 border-brand-500">
+                        <span class="text-xl font-bold text-white tracking-tighter hidden sm:block">ELECTRON<span class="text-brand-500">SOLUTIONS</span></span>
                     </a>
                 </div>
                 <div class="hidden md:block">
@@ -289,9 +272,12 @@
             <div class="bg-dark-800 rounded-2xl p-8 md:p-12 border border-slate-700 shadow-2xl">
                 <div class="text-center mb-10">
                     <h2 class="text-3xl font-bold text-white mb-4">Ready to start your project?</h2>
-                    <p class="text-slate-400">Fill out the form below and we'll get back to you within 24 hours.</p>
+                    <p class="text-slate-400">Fill out the form below or email us directly at:</p>
+                    <a href="mailto:nicholas@electronsoftwaresolutions.co.za" class="inline-block mt-3 text-brand-500 font-bold hover:text-brand-400 transition-colors">
+                        <i class="fa-solid fa-envelope mr-2"></i>nicholas@electronsoftwaresolutions.co.za
+                    </a>
                 </div>
-                <form action="https://formsubmit.co/s231169949@mandela.ac.za" method="POST" class="space-y-6">
+                <form action="https://formsubmit.co/nicholas@electronsoftwaresolutions.co.za" method="POST" class="space-y-6">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_subject" value="New Lead from Electron Software Solutions Website">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -331,10 +317,18 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                 <div class="col-span-1 md:col-span-2">
-                    <a href="index.html" class="text-2xl font-bold text-white tracking-tighter mb-4 block">
-                        <i class="fa-solid fa-code text-brand-500 mr-2"></i>ELECTRON<span class="text-brand-500">SOLUTIONS</span>
+                    <a href="index.html" class="flex items-center gap-2 mb-4">
+                        <img src="https://raw.githubusercontent.com/nicholaskock33-tech/website/main/mylogo.jpg" alt="Electron Software Solutions Logo" class="h-10 w-10 rounded-full object-cover border-2 border-brand-500">
+                        <span class="text-xl font-bold text-white tracking-tighter">ELECTRON<span class="text-brand-500">SOLUTIONS</span></span>
                     </a>
-                    <p class="text-slate-400 max-w-sm">Building the future of digital business. We are a full-service software development agency based in Tech City.</p>
+                    <p class="text-slate-400 max-w-sm">
+                        Building the future of digital business. We are a full-service software development agency based in Tech City.
+                    </p>
+                    <div class="mt-4">
+                        <a href="mailto:nicholas@electronsoftwaresolutions.co.za" class="inline-flex items-center text-slate-400 hover:text-brand-500 transition-colors">
+                            <i class="fa-solid fa-envelope mr-2"></i>nicholas@electronsoftwaresolutions.co.za
+                        </a>
+                    </div>
                 </div>
                 <div>
                     <h4 class="text-white font-bold mb-4">Services</h4>
@@ -348,9 +342,10 @@
                 <div>
                     <h4 class="text-white font-bold mb-4">Connect</h4>
                     <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/nicholaskock/" target="_blank" class="text-slate-400 hover:text-pink-500 transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
+                        <a href="https://www.tiktok.com/@electronsoftwaresolution?is_from_webapp=1&sender_device=pc" target="_blank" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-tiktok text-xl"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61580348883295" target="_blank" class="text-slate-400 hover:text-blue-600 transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
                         <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
-                        <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-twitter text-xl"></i></a>
-                        <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-github text-xl"></i></a>
                     </div>
                 </div>
             </div>
