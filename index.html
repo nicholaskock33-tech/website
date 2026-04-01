@@ -6,7 +6,7 @@
     <title>Electron Software Solutions | Custom Software Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -25,6 +25,37 @@
         ::-webkit-scrollbar-track { background: #0f172a; }
         ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #475569; }
+        
+        /* INTENSE GLOW ANIMATION - BRIGHTER & MORE VISIBLE */
+        @keyframes intense-glow {
+            0% { 
+                text-shadow: 
+                    0 0 10px rgba(14, 165, 233, 0.8),
+                    0 0 20px rgba(14, 165, 233, 0.6),
+                    0 0 30px rgba(14, 165, 233, 0.4);
+                opacity: 1;
+            }
+            50% { 
+                text-shadow: 
+                    0 0 20px rgba(14, 165, 233, 1),
+                    0 0 40px rgba(14, 165, 233, 0.9),
+                    0 0 60px rgba(14, 165, 233, 0.7),
+                    0 0 80px rgba(168, 85, 247, 0.8),
+                    0 0 100px rgba(168, 85, 247, 0.6);
+                opacity: 1;
+            }
+            100% { 
+                text-shadow: 
+                    0 0 10px rgba(14, 165, 233, 0.8),
+                    0 0 20px rgba(14, 165, 233, 0.6),
+                    0 0 30px rgba(14, 165, 233, 0.4);
+                opacity: 1;
+            }
+        }
+        .text-glow {
+            animation: intense-glow 2s infinite ease-in-out;
+            font-weight: 900;
+        }
     </style>
 </head>
 <body class="bg-dark-900 text-slate-300 font-sans antialiased">
@@ -70,10 +101,20 @@
             <div class="inline-block mb-4 px-4 py-1.5 rounded-full border border-slate-700 bg-slate-800/50 text-brand-500 text-sm font-semibold tracking-wide uppercase">
                 Accepting New Clients for Q4
             </div>
+            
             <h1 class="text-5xl md:text-7xl font-bold text-white tracking-tight mb-8">
                 We build software that <br class="hidden md:block" />
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-purple-500">scales your business.</span>
             </h1>
+
+            <!-- EYE-CATCHING MESSAGE (BRIGHTER GLOW) -->
+            <div class="mb-10">
+                <p class="text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-brand-400 to-purple-400 text-glow leading-tight">
+                    Turn Missed Calls and Messages <br class="hidden md:block" />
+                    <span class="text-white">into Paying Clients</span>
+                </p>
+            </div>
+
             <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-400 mb-10">
                 From MVPs to Enterprise solutions. We are a team of senior engineers and designers dedicated to turning your vision into robust, scalable code.
             </p>
